@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuget.DependencyVisualizer"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuget.PackageVisualizer.Tests", "Nuget.PackageVisualizer.Tests\Nuget.PackageVisualizer.Tests.csproj", "{AE25653D-24E7-48A8-8697-B588AE758A50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuget.DependencyVisualizer.Core", "Nuget.DependencyVisualizer.Core\Nuget.DependencyVisualizer.Core.csproj", "{88EDC847-CF8C-43DA-80A3-FAD5780A053A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AE25653D-24E7-48A8-8697-B588AE758A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE25653D-24E7-48A8-8697-B588AE758A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE25653D-24E7-48A8-8697-B588AE758A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88EDC847-CF8C-43DA-80A3-FAD5780A053A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88EDC847-CF8C-43DA-80A3-FAD5780A053A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88EDC847-CF8C-43DA-80A3-FAD5780A053A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88EDC847-CF8C-43DA-80A3-FAD5780A053A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
