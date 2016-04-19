@@ -4,11 +4,7 @@ using NUnit.Framework;
 namespace Nuget.PackageVisualizer.Tests
 {
     [TestFixture]
-    public class UnitTest1
+    public class SearchForPackageUsagesTests
     {
-        [Test]
-        public void TestMethod1()
-        {
-        }
     }
 }
