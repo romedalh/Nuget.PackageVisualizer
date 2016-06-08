@@ -52,12 +52,22 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="PackagesConfig\PackagesConfigTests.cs" />
     <Compile Include="PackageTests.cs" />
     <Compile Include="SearchForPackageUsagesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="PackagesConfig\TestCases\noXml.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PackagesConfig\TestCases\noEntries.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PackagesConfig\TestCases\standard.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nuget.DependencyVisualizer.Core\Nuget.DependencyVisualizer.Core.csproj">
@@ -65,6 +75,7 @@
       <Name>Nuget.DependencyVisualizer.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

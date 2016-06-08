@@ -7,8 +7,8 @@
     <ProjectGuid>{0FEF2CA8-A511-416F-8B33-CCE23CEE1B2D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nuget.DependencyVisualizer</RootNamespace>
-    <AssemblyName>Nuget.DependencyVisualizer</AssemblyName>
+    <RootNamespace>Nuget.DependencyVisualizer.TestConsole</RootNamespace>
+    <AssemblyName>Nuget.DependencyVisualizer.TestConsole</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,11 +44,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Configuration.settings</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Configuration.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Configuration.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nuget.DependencyVisualizer.Core\Nuget.DependencyVisualizer.Core.csproj">
+      <Project>{88edc847-cf8c-43da-80a3-fad5780a053a}</Project>
+      <Name>Nuget.DependencyVisualizer.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

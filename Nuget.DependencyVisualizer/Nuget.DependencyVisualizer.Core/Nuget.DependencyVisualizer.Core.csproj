@@ -40,8 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creator\Files\PackagesConfig.cs" />
+    <Compile Include="Creator\Model\ProjectFiles.cs" />
+    <Compile Include="Creator\SystemCreator.cs" />
+    <Compile Include="Creator\SystemPath.cs" />
     <Compile Include="Domain\Package.cs" />
     <Compile Include="Domain\Project.cs" />
+    <Compile Include="Exceptions\IncorrectFileException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\System.cs" />
   </ItemGroup>

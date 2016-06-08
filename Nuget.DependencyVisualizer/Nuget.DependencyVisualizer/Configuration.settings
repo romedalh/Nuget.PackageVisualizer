@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Nuget.DependencyVisualizer.TestConsole" GeneratedClassName="Configuration">
+  <Profiles />
+  <Settings>
+    <Setting Name="SystemPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">default</Value>
+    </Setting>
+    <Setting Name="PackageToFind" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">default</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

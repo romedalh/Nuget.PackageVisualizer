@@ -17,5 +17,10 @@ namespace Nuget.DependencyVisualizer.Core.Domain
                 return false;
             return package.Name.Equals(Name,StringComparison.InvariantCultureIgnoreCase);
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

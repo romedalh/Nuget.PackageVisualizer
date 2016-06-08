@@ -1,4 +1,5 @@
-﻿using Nuget.DependencyVisualizer.Core;
+﻿using System.IO;
+using Nuget.DependencyVisualizer.Core;
 using Nuget.DependencyVisualizer.Core.Domain;
 using NUnit.Framework;
 
@@ -7,6 +8,7 @@ namespace Nuget.PackageVisualizer.Tests
     [TestFixture]
     public class PackageTests
     {
+        
         [TestCase("package1","package1")]
         [TestCase("PackagE.1","pACkage.1")]
         public void Returns_True_When_Two_Packages_Have_Same_Name(string firstName, string secondName)
